@@ -1,0 +1,182 @@
+
+html{
+  background:url(../img/background.jpg)no-repeat;
+  background-size: cover ;
+  height: 100%;
+
+}
+body{
+  margin: 10% 0;
+  color: #303030;
+  font-family: 'Roboto', sans-serif;
+
+}
+main{
+  width: 60%;
+  margin: 0% auto;
+  background:#111a28;
+  border-radius: 10px ;
+}
+header{
+  padding: 20px;
+  display: block;
+}
+.nike__photo{
+  width: 60%;
+  text-align: center;
+  display: inline-block;
+}
+.nike__photo img{
+  width: 80%;
+  padding: 15px 20px;
+}
+ul.nike__photo.dots  {
+ margin-top: 50px;
+ padding: 0;
+}
+.nike__photo.dots li {
+  height: 12px;
+  width: 12px;
+  vertical-align: middle;
+  display: inline-block;
+  margin: 0 3px;
+  list-style: none;
+  background:white;
+  border-radius: 50%;
+}
+.nike__photo.dots li:nth-child(1) {
+  height: 15px;
+  width: 15px;
+  background:#1f273f;
+  border:1px solid #4f5660;
+}
+.nike__photo.dots li:nth-child(3) {
+  background:#ed3333;
+
+}
+.nike__photo.dots li:nth-child(4) {
+  background:#29e3ea;
+
+}
+.nike__info{
+  vertical-align: top;
+  width: 39%;
+  display: inline-block;
+}
+.nike__info.name{
+  color: white;
+  width: 80%;
+  font-size: 36px;
+}
+.nike__info.name:after{
+  display: block;
+  margin: 10px 0 0;
+  content: "Unisex Skateboarding Shoe";
+  color: grey;
+  width: 100%;
+  font-size: 16px;
+}
+form {
+  width: 250px;
+  margin: 10px 0;
+ 
+}
+
+form p,
+form input[type="submit"] {
+  text-align: center;
+  font-size: 20px;
+}
+
+.nike__rating form input[type="submit"] {
+  border: 1px solid #d9d9d9;
+  background-color: #efefef;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  color: grey;
+}
+
+.clasificacion {
+  line-height: 1;
+  text-align: left;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+label:hover,
+label:hover ~ label {
+  color: orange;
+}
+
+input[type="radio"]:checked ~ label {
+  color: orange;
+}
+select.search-select{
+
+}
+.search-select{
+  background:none;
+  color: grey;
+  width: 70px;
+  font-size: 16px;
+  padding: 5px 7px;
+
+}
+option{
+  color: black;
+}
+button{
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  background: #202835;
+  color: grey;
+  border:1px solid grey;
+  padding: 15px 0;
+  width: 65%;
+}
+button:hover{
+  background: orange;
+  color: white;
+  border:none;
+  box-shadow: 0 0 55px rgba(0,0,0,0.7);
+}
+@media screen and (max-width: 767px) {
+  main{
+    padding-bottom: 10px;
+    width: 90%;
+  }
+  .nike__photo{
+    display: block;
+    margin:0 auto;
+  }
+  .nike__info{
+    display: block;
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  ul.nike__photo.dots{
+    margin-top: 35px;
+    margin-bottom: 20px;
+  }
+  .nike__photo img{
+    width: 100%;
+    padding:15px 0;
+  }
+  form{
+    margin: 20px auto;
+  }
+  .clasificacion{
+    text-align: center;
+    margin: 0 auto;
+  }
+  button{
+    margin: 30px auto;
+  }
+}
